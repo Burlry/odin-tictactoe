@@ -1,0 +1,83 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header {
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.content {
+    height: 60vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 60vh 1fr;
+    grid-template-rows: 1fr;
+}
+
+.player-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.player-one {
+    grid-column: 2 / 3;
+}
+
+.player-two {
+    grid-column: 4 / 5;
+}
+
+.current-player-container {
+    grid-column: 3 / 4;
+    font-size: 500%;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2px;
+}
+
+.gameboard div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#square1,
+#square2,
+#square4,
+#square5,
+#square7,
+#square8 {
+    border-right: 2px solid black;
+}
+
+#square1,
+#square2,
+#square3,
+#square4,
+#square5,
+#square6 {
+    border-bottom: 2px solid black;
+}
+
+
